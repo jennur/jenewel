@@ -1,7 +1,5 @@
 # jenewel
 
-> Handmade jewelry
-
 ## Build Setup
 
 ``` bash

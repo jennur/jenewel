@@ -40,7 +40,18 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    'nuxt-svg-loader',
+    'nuxt-fontawesome'
   ],
+  fontawesome: {
+    component: "fa",
+    imports: [
+      {
+        set: "@fortawesome/free-brands-svg-icons",
+        icons: ["fab"]
+      }
+    ]
+  },
   /*
   ** Build configuration
   */

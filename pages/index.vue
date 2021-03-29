@@ -1,35 +1,25 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        jenewel
-      </h1>
-      <h2 class="subtitle">
-        Handmade jewelry
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+
+    <logo class="logo"/>
+    <div class="info-splash">
+      <a class="insta-link" target="_blank" href="https://instagram.com/jenewel_">
+        <fa
+          :icon="['fab', 'instagram']"
+          style="font-size: 25px; color: #FFDA88;"
+        />
+      </a>
+      <p>
+        Welcome to Jenewel! 💖 This site is under construction. In the meantime, follow my instagram account to see my work. 💎
+      </p>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-00371448-37cb-463f-8189-413991693bfd"></div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/assets/jenewel-logo.svg';
 
 export default {
   components: {
@@ -39,34 +29,28 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #F2FFFF;
+
+}
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 40px auto;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+.logo {
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  width: 300px;
+  margin-bottom: 40px;
+  margin-left: -21px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.insta-link {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>

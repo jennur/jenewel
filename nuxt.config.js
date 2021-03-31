@@ -32,6 +32,7 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
@@ -48,6 +49,9 @@ module.exports = {
         icons: ["fab"]
       }
     ]
+  },
+  googleAnalytics: {
+    id: 'G-5JZTH3W982'
   },
   /*
   ** Build configuration

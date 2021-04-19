@@ -50,7 +50,7 @@ module.exports = {
       },
       {
         set: "@fortawesome/free-regular-svg-icons",
-        icons: ["farEnvelope"]
+        icons: ["faEnvelope"]
       }
     ]
   },

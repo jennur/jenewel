@@ -46,7 +46,11 @@ module.exports = {
     imports: [
       {
         set: "@fortawesome/free-brands-svg-icons",
-        icons: ["fab"]
+        icons: ["faInstagram"]
+      },
+      {
+        set: "@fortawesome/free-regular-svg-icons",
+        icons: ["farEnvelope"]
       }
     ]
   },

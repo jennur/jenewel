@@ -8,6 +8,9 @@
         <p>
           I make all jewelry by hand with sterling silver and silver/gold plated findings. Check out my <a href="https://www.etsy.com/shop/JenewelCrafts">Etsy shop</a> and follow me on Instagram to see my latest work.
         </p>
+
+        <a href="https://www.etsy.com/shop/JenewelCrafts" title="Etsy" class="button" target="_blank">Shop</a>
+
         <a class="contact-link" target="_blank" href="https://instagram.com/jenewel_">
           <fa
             class="fa-icon"
@@ -88,6 +91,22 @@ a {
 
 a:hover {
   border-bottom: 2px solid #BAF4D8;
+}
+
+.button {
+  display: block;
+  width: max-content;
+  background-color: #BAF4D8;
+  color: #292929;
+  padding: 12px 24px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.button:hover {
+  border-bottom: none;
+  background-color: #b3f1d3;
 }
 
 .contact-link {

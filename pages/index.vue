@@ -45,7 +45,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
 
 body {
-  background-color: #f7ffff;
+  background-color: #F8FFFC;
   color: #292929;
   font-family: 'Quattrocento Sans', sans-serif;
 }
@@ -70,7 +70,7 @@ h1 {
 
 .info-box {
   padding: 24px;
-  background-color: #EFFFF9;
+  background-color: #F5F5FF;
   box-sizing: border-box;
   border-radius: 10px 10px 0px 0px;
 }

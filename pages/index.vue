@@ -4,7 +4,7 @@
     <logo class="logo"/>
     <div class="info-splash">
       <div class="info-box">
-        <h1>Nice to meet you! 💖 </h1>
+        <h1>Nice to meet you! </h1>
         <p>
           I make all jewelry by hand with sterling silver and silver/gold plated findings. Check out my <a href="https://www.etsy.com/shop/JenewelCrafts">Etsy shop</a> and follow me on Instagram to see my latest work.
         </p>

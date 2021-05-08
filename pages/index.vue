@@ -6,7 +6,7 @@
       <div class="info-box">
         <h1>Nice to meet you! 💖 </h1>
         <p>
-          This site is under construction. In the meantime, follow my instagram account to see my work. 💎
+          I make all jewelry by hand with sterling silver and silver/gold plated findings. Check out my <a href="https://www.etsy.com/shop/JenewelCrafts">Etsy shop</a> and follow me on Instagram to see my latest work.
         </p>
         <a class="contact-link" target="_blank" href="https://instagram.com/jenewel_">
           <fa
@@ -69,11 +69,27 @@ h1 {
 }
 
 .info-box {
+  max-width: 900px;
   padding: 24px;
   background-color: #F5F5FF;
   box-sizing: border-box;
   border-radius: 10px 10px 0px 0px;
 }
+
+.info-box p {
+  max-width: 700px;
+  margin-top: 12px;
+}
+
+a {
+  color: #9292FF;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #BAF4D8;
+}
+
 .contact-link {
   display: inline-flex;
   align-items: center;
@@ -96,6 +112,7 @@ h1 {
 .contact-link:hover,
 .contact-link:hover .fa-icon {
   color: #adadff;
+  border-bottom: none;
 }
 
 .link-title {

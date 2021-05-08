@@ -77,7 +77,7 @@ h1 {
 .contact-link {
   display: inline-flex;
   align-items: center;
-  color: #ffc500;
+  color: #9292FF;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 20px;
@@ -89,13 +89,13 @@ h1 {
 
 .fa-icon {
   font-size: 25px;
-  color: #ffc500;
+  color: #9292FF;
   transition: 0.2s;
 }
 
 .contact-link:hover,
 .contact-link:hover .fa-icon {
-  color: #FFDA88;
+  color: #adadff;
 }
 
 .link-title {

@@ -1,7 +1,10 @@
 <template>
   <div class="container">
 
-    <logo class="logo"/>
+<!--    <logo class="logo"/>-->
+    <div class="logo">
+      <img src="~/assets/jenewel-logo.png" alt="jenewel-logo"/>
+    </div>
     <div class="info-splash">
       <div class="info-box">
         <h1>Nice to meet you! </h1>
@@ -69,6 +72,10 @@ h1 {
   width: 200px;
   margin-bottom: 40px;
   margin-left: -21px;
+}
+
+.logo img {
+  width: inherit;
 }
 
 .info-box {

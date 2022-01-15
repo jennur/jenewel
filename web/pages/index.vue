@@ -1,48 +1,25 @@
 <template>
-  <div class="container">
 
-<!--    <logo class="logo"/>-->
-    <div class="logo">
-      <img src="~/assets/jenewel-logo.png" alt="jenewel-logo"/>
-    </div>
-    <div class="info-splash">
-      <div class="info-box">
-        <h1>Nice to meet you! </h1>
-        <p>
-          I make all jewelry by hand with sterling silver and silver/gold plated findings. Check out my <a href="https://www.etsy.com/shop/JenewelCrafts">Etsy shop</a> and follow me on Instagram to see my latest work.
-        </p>
-
-        <a href="https://www.etsy.com/shop/JenewelCrafts" title="Etsy" class="button" target="_blank">Shop</a>
-
-        <a class="contact-link" target="_blank" href="https://instagram.com/jenewel_">
-          <fa
-            class="fa-icon"
-            :icon="['fab', 'instagram']"
-          />
-          <span class="link-title">Instagram</span>
-        </a>
-
-        <a class="contact-link" href="mailto:contact@jenewel.com">
-          <fa
-            class="fa-icon"
-            :icon="['far', 'envelope']"
-          />
-          <span class="link-title">Contact</span>
-        </a>
-
-      </div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-00371448-37cb-463f-8189-413991693bfd"></div>
-    </div>
-  </div>
+<section>
+        <div v-for="product in products" :key="product.name">
+          {{ product.title }}
+        </div>
+</section>
 </template>
 
 <script>
+import { groq } from "@nuxtjs/sanity";
+
 import Logo from '~/assets/jenewel-logo.svg';
 
 export default {
   components: {
     Logo
+  },
+  async asyncData({ $sanity }) {
+    const query = groq`*[_type == "product"]`;
+    const products = await $sanity.fetch(query).catch(error => console.log("Error:", error));
+    return { products };
   }
 }
 </script>

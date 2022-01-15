@@ -21,8 +21,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -32,7 +31,7 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/sanity/module'
   ],
   /*
   ** Nuxt.js modules
@@ -54,9 +53,6 @@ module.exports = {
       }
     ]
   },
-  googleAnalytics: {
-    id: 'G-5JZTH3W982'
-  },
   /*
   ** Build configuration
   */
@@ -64,7 +60,13 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    }
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    },
   }
 }

@@ -14,14 +14,19 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/sanity": "^0.10.0",
+    "@sanity/client": "^2.23.2",
+    "@sanity/image-url": "^1.0.1",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
-    "nuxt-svg-loader": "^1.2.0"
+    "nuxt-svg-loader": "^1.2.0",
+    "stripe": "^8.197.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^2.0.15",
+    "sass": "^1.48.0",
+    "sass-loader": "10.1.1"
   }
 }

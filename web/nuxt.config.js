@@ -21,7 +21,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['~/assets/css/main.scss'],
   /*
   ** Plugins to load before mounting the App
   */
@@ -31,8 +31,20 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/sanity/module'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/sanity/module',
+    '@nuxtjs/apollo'
   ],
+  styleResources: {
+    scss: ['./assets/css/settings/variables.scss']
+  },
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://2mpgois7.apicdn.sanity.io/v1/graphql/production/default',
+      }
+    }
+  },
   /*
   ** Nuxt.js modules
   */
@@ -60,13 +72,5 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    loaders: {
-      sass: {
-        implementation: require('sass'),
-      },
-      scss: {
-        implementation: require('sass'),
-      },
-    },
   }
 }

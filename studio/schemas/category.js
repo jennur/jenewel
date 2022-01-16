@@ -23,8 +23,13 @@ export default {
       type: 'text',
     },
     {
-      name: 'parents',
-      title: 'Parent categories',
+      name: 'main',
+      title: "Is main category",
+      type: 'boolean'
+    },
+    {
+      name: 'children',
+      title: 'Child categories',
       type: 'array',
       of: [
         {

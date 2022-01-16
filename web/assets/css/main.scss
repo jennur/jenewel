@@ -1,0 +1,43 @@
+// Global styles
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+html {
+  color: $textColor;
+  background-color: $secondaryBgColor;
+  font-family: $bodyFont;
+  font-weight: 200;
+}
+
+body, #__nuxt, #__layout {
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  background-color: $bgColor;
+}
+
+a {
+  color: #9292FF;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #BAF4D8;
+}
+
+.button {
+  display: block;
+  width: max-content;
+  background-color: #BAF4D8;
+  color: #292929;
+  padding: 12px 24px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.button:hover {
+  border-bottom: none;
+  background-color: #b3f1d3;
+}

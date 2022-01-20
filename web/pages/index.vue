@@ -1,38 +1,31 @@
 <template>
   <div>
     <cta-section/>
-    <nav>
-      <ul>
-        <li v-for="category in allCategory" :key="category._key">
-          <a :href="category.slug.current">
-            {{ category.title }}
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <category-cta class="main-content"/>
 
   </div>
 </template>
 
 <script>
+import CategoryCta from '../components/CategoryCta/CategoryCta.vue';
 import CtaSection from '../components/CtaSection/CtaSection.vue';
 import ProductCard from '../components/ProductCard/ProductCard.vue';
 import ProductCardList from '../components/ProductCard/ProductCardList.vue';
-
-import mainCategories from '../queries/mainCategories';
+import SideBar from '../components/SideBar/SideBar.vue';
 
 export default {
   components: {
     CtaSection,
     ProductCardList,
-    ProductCard
+    ProductCard,
+    SideBar,
+    CategoryCta
   },
   data() {
     return {
-      allCategory: []
+      allCategories: this.$store.state.allCategories
     }
-  },
-  apollo: {allCategory: mainCategories }
+  }
 }
 </script>
 

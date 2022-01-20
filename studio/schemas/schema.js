@@ -8,6 +8,7 @@ import blockContent from './blockContent'
 import category from './category'
 import product from './product'
 import productVariant from './productVariant'
+import displayImage from './displayImage'
 
 import localeString from './locale/String'
 import localeText from './locale/Text'
@@ -22,6 +23,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    displayImage,
     product,
     category,
     // When added to this list, object types can be used as

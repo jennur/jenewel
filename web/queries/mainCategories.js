@@ -1,14 +1,25 @@
 import gql from 'graphql-tag'
 
-const mainCategories = gql`
+const MAIN_CATEGORIES = gql`
     query {
       allCategory (where: { main: { eq: true }}){
         title
+        image {
+          asset {
+            url
+          }
+        }
         slug {
           current
+        }
+        children {
+           title
+           slug {
+             current
+           }
         }
       }
     }
 `
 
-export default mainCategories;
+export default MAIN_CATEGORIES;

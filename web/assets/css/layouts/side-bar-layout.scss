@@ -1,0 +1,23 @@
+
+.side-bar-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: $desktopWidth;
+  margin: 0 auto;
+  padding: calc(3*$spacingXl) $spacingSm;
+
+
+  .side-bar {
+    flex-basis: 20%;
+  }
+
+  .main-content {
+    flex-basis: 80%;
+    padding: 0;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}

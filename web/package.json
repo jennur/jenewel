@@ -26,7 +26,8 @@
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-svg-loader": "^1.2.0",
     "sanity-blocks-vue-component": "^1.0.1",
-    "stripe": "^8.197.0"
+    "stripe": "^8.197.0",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",

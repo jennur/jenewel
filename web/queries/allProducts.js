@@ -1,15 +1,17 @@
 import gql from 'graphql-tag'
 
-const allProductsInCategory = ($categorySlug) => gql`
+const ALL_PRODUCTS = gql`
     query {
-      allProduct(where: { slug: { current: { eq: $categorySlug}}}) {
+      allProduct {
         title
+        categories {
+          title
+          slug {
+            current
+          }
+        }
         slug {
           current
-        }
-        body{
-          enRaw,
-          nbRaw
         }
         defaultProductVariant {
           images {
@@ -25,4 +27,4 @@ const allProductsInCategory = ($categorySlug) => gql`
     }
 `
 
-export default allProductsInCategory;
+export default ALL_PRODUCTS;

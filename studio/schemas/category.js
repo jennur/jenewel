@@ -28,6 +28,14 @@ export default {
       type: 'boolean'
     },
     {
+      name: 'image',
+      title: 'image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      }
+    },
+    {
       name: 'children',
       title: 'Child categories',
       type: 'array',
